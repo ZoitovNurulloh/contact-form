@@ -10,7 +10,60 @@
 </head>
 <body>
 
-  <h1>hello world</h1>
+  <form class="form">
+    <h2 class="form__heading">Contact us</h2>
+    <div class="form__inner">
+      <div class="form__group">
+        <label class="form__label" for="first-name">First name *</label>
+        <input class="form__input form__input--js" type="text" name="first-name" id="first-name">
+        <span class="form__err-message"></span>
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="last-name">Last name *</label>
+        <input class="form__input form__input--js" type="text" name="last-name" id="last-name">
+        <span class="form__err-message"></span>
+      </div>
+    </div>
+
+    <div class="form__inner">
+      <div class="form__group">
+        <label class="form__label" for="email">Email address *</label>
+        <input class="form__input form__input--js" type="email" name="email" id="email">
+        <span class="form__err-message"></span>
+      </div>
+    </div>
+
+    <div class="form__inner">
+      <div class="form__wrapper">
+        <input class="form__input" type="radio" id="general-enquiry" name="query" value="General enquiry"/>
+        <label class="form__label" for="general-enquiry">General enquiry *</label>
+      </div>
+      <div class="form__wrapper">
+        <input class="form__input" type="radio" id="support-request" name="query" value="Support request"/>
+        <label class="form__label" for="support-request">Support request *</label>
+      </div>
+    </div>
+
+    <div class="form__inner">
+      <div class="form__group">
+        <label class="form__label" for="message">Message *</label>
+        <textarea class="form__message form__input--js" name="Message" id="message"></textarea>
+        <span class="form__err-message"></span>
+      </div>
+    </div>
+
+
+    <div class="form__consent">
+      <div class="form__consent--inner">
+        <input class="form__consent-input" type="checkbox" id="consent" name="consent" />
+        <label class="form__consent-label" for="consent">I consent to being contacted by the team *
+        </label>
+      </div>
+      <span class="form__err-message"></span>
+    </div>
+
+    <button type="submit" class="btn" id="btn">Submit</button>
+  </form>
 
   <script src="./js/form.js"></script>
 </body>
